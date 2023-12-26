@@ -1,0 +1,174 @@
+npx sequelize-cli model:generate --name Admin --attributes email:string,fullname:string,password:string
+
+npx sequelize-cli model:generate --name User --attributes reference:string,fullname:string,email:string,telephone:string,password:string,role:string,id_admin:integer
+
+npx sequelize-cli model:generate --name Shipping_Companie --attributes name:string,id_admin:integer
+
+npx sequelize-cli model:generate --name Coupon --attributes is_valid:boolean,name:string,code:string,discount:float,time:string,limit:integer,used:integer,id_admin:integer
+
+npx sequelize-cli model:generate --name City_Admin --attributes name:string,id_admin:integer
+
+npx sequelize-cli model:generate --name Setting_Admin --attributes default_conf_pricing:float,delfault_del_pricing:float,default_time:integer,trial_period:integer,automated_msg:string,id_admin:integer
+
+npx sequelize-cli model:generate --name Status_Admin --attributes name:string,checked:boolean,id_setting:integer
+
+npx sequelize-cli model:generate --name Client_Categorie --attributes name:string
+
+npx sequelize-cli model:generate --name Annoucement --attributes text:string,id_clt_categorie:integer,id_setting:integer
+
+npx sequelize-cli model:generate --name Ads --attributes image:blob,id_clt_categorie:integer,id_setting:integer
+
+npx sequelize-cli model:generate --name Team_Admin --attributes name:string,email:string,password:string,salaire:float,day_payment:integer,commission:float,upsell:float,max_order:integer,can_del_or_edit_order:boolean,all_column_access:boolean,all_client_access:boolean,all_page_access:boolean,id_admin:integer
+
+npx sequelize-cli model:generate --name Column_Of_User --attributes name:string,active:boolean,id_admin:integer
+
+npx sequelize-cli model:generate --name Support --attributes subject:string,departement:string,attachment:blob,response:string,status:string,id_user:integer,id_team:integer
+
+npx sequelize-cli model:generate --name Team_User --attributes name:string,email:string,password:string,salaire:float,day_payment:integer,commission:float,upsell:float,max_order:integer,can_del_or_edit_order:boolean,all_column_access:boolean,all_cities_access:boolean,all_product_access:boolean,all_page_access:boolean,id_user:integer
+
+npx sequelize-cli model:generate --name Column_Of_Order --attributes name:string,active:boolean,id_user:integer
+
+npx sequelize-cli model:generate --name Pack --attributes price_per_month:float,date_subscription:date,date_expiration:date,item_inclued:json,id_user:integer
+
+npx sequelize-cli model:generate --name Setting_User --attributes default_conf_pricing:float,delfault_del_pricing:float,default_time:integer,automated_msg:string,id_user:integer
+
+npx sequelize-cli model:generate --name Status_User --attributes name:string,checked:boolean,id_setting:integer
+
+npx sequelize-cli model:generate --name Product --attributes name:string,variant:json,price_selling:float,price_buying:float,price_emballage:float,price_best_selling:float,id_user:integer
+
+npx sequelize-cli model:generate --name Other_Charge --attributes name:string,price:float,id_product:integer
+
+npx sequelize-cli model:generate --name City_User --attributes name:string,id_user:integer
+
+npx sequelize-cli model:generate --name Stock --attributes quantity:string,id_user:integer,id_product:integer,id_city:integer
+
+npx sequelize-cli model:generate --name Admin_Page --attributes name:string
+
+npx sequelize-cli model:generate --name Client_Page --attributes name:string
+
+npx sequelize-cli model:generate --name Team_Admin_Column_Acces --attributes id_team:integer,id_column_of_user:integer
+
+npx sequelize-cli model:generate --name Team_Admin_Client_Acces --attributes id_team:integer,id_user:integer
+
+npx sequelize-cli model:generate --name Team_Admin_Page_Acces --attributes id_team:integer,id_admin_page:integer
+
+npx sequelize-cli model:generate --name Team_Client_Page_Acces --attributes id_team:integer,id_client_page:integer
+
+npx sequelize-cli model:generate --name Team_Client_City_Acces --attributes id_team:integer,id_city:integer
+
+npx sequelize-cli model:generate --name Team_Client_Column_Acces --attributes id_team:integer,id_column_of_order:integer
+
+npx sequelize-cli model:generate --name Team_Client_Product_Acces --attributes id_team:integer,id_product:integer
+
+npx sequelize-cli model:generate --name Client_Categorie_Annoucement --attributes id_annoucement:integer,id_clt_categorie:integer
+
+npx sequelize-cli model:generate --name Client_Categorie_Ads --attributes id_ads:integer,id_clt_categorie:integer
+
+npx sequelize-cli model:generate --name Subscription --attributes id_pack:integer,id_user:integer
+
+npx sequelize-cli model:generate --name Perte_Categorie --attributes name:string
+
+npx sequelize-cli model:generate --name Gain_Categorie --attributes name:string
+
+npx sequelize-cli model:generate --name Gain --attributes amount:float,date:date,note:text,id_gain_categorie:integer,id_product:integer
+
+npx sequelize-cli model:generate --name Perte --attributes amount:float,date:date,note:text,id_perte_categorie:integer,id_product:integer
+
+npx sequelize-cli model:generate --name Sheet --attributes SheetID:string,id_user:integer
+
+npx sequelize-cli model:generate --name Discount --attributes id_coupon:integer,id_user:integer
+
+npx sequelize-cli model:generate --name Payment_Method --attributes name:string,image:blob,id_admin:integer
+
+npx sequelize-cli model:generate --name Bank_Information --attributes name:string,bank:string,rib:string
+
+npx sequelize-cli model:generate --name Product_Order --attributes id_order:integer,id_product:integer
+
+npx sequelize-cli model:generate --name Order --attributes date:date,id_product_order:integer,nom:string,telephone:string,id_city:integer,prix:float,status:string,adresse:string,shipping:string,source:string,id_team:integer,last_action:string
+
+npx sequelize-cli model:generate --name Client_Account --attributes solde:float,montant_du:float,id_user:integer
+
+npx sequelize-cli model:generate --name Client_Payment --attributes amount:float,status:string,id_user:integer
+
+npx sequelize-cli model:generate --name Variant --attributes name:string,id_user:integer
+
+npx sequelize-cli model:generate --name Client_Goal --attributes value:float,id_user:integer
+
+npx sequelize-cli model:generate --name Shipping_City --attributes id_city:integer,id_shipping:integer
+
+npx sequelize-cli db:migrate --to <migration-file-name>
+
+- npx sequelize-cli db:migrate:undo:all
+- npx sequelize-cli db:seed:all
+- npx sequelize-cli db:migrate
+- npx sequelize-cli seed:generate --name column-client-perte
+
+ALTER TABLE `team_users` ADD `active` BOOLEAN NOT NULL DEFAULT FALSE AFTER `upsell`;
+ALTER TABLE `product_orders` ADD `quantity` INT NOT NULL DEFAULT '0' AFTER `id_product`;
+ALTER TABLE `Orders` ADD `message` INT NOT NULL DEFAULT '0' AFTER `shipping`;
+ALTER TABLE `Product_Orders` ADD `variant` JSON NULL DEFAULT NULL AFTER `quantity`;
+
+ALTER TABLE `Orders`
+  DROP `shipping`,
+  DROP `quantity`,
+  DROP `variant`,
+  DROP `last_action`;
+
+DELETE FROM `Column_Of_Orders` WHERE `Column_Of_Orders`.`id` = 11;
+DELETE FROM `Column_Of_Orders` WHERE `Column_Of_Orders`.`id` = 15;
+DELETE FROM `Column_Of_Orders` WHERE `Column_Of_Orders`.`id` = 16;
+ALTER TABLE `Team_Users` ADD `downsell` FLOAT NULL DEFAULT NULL AFTER `upsell`;
+ALTER TABLE `Team_Users` ADD `crosssell` FLOAT NULL DEFAULT NULL AFTER `downsell`;
+
+
+ALTER TABLE `pertes` CHANGE `date` `dateFrom` DATETIME NULL DEFAULT NULL;
+ALTER TABLE `pertes` ADD `dateTo` DATETIME NULL DEFAULT NULL AFTER `dateFrom`;
+
+ALTER TABLE `gains` CHANGE `date` `dateFrom` DATETIME NULL DEFAULT NULL;
+ALTER TABLE `gains` ADD `dateTo` DATETIME NULL DEFAULT NULL AFTER `dateFrom`;
+sequelize db:migrate --name=20230221164510-create-client-goal.js
+
+INSERT INTO `Client_Goals` (`id`, `value`, `id_user`, `createdAt`, `updatedAt`) VALUES ('1', '0.0', '1', '2023-02-21 23:12:09.000000', '2023-02-21 23:12:09.000000');
+
+ALTER TABLE `Orders` ADD `reportedDate` DATE NULL DEFAULT NULL AFTER `date`;
+
+DELETE FROM `perte_categories` WHERE `Perte_Categories`.`id` = 20
+
+ALTER TABLE `Setting_Users` ADD `startWrldOrder` VARCHAR(14) NULL DEFAULT NULL AFTER `automated_msg`;
+
+ALTER TABLE `Orders` ADD `changer` VARCHAR(3) NOT NULL DEFAULT 'Non' AFTER `updownsell`;
+ALTER TABLE `Orders` ADD `ouvrir` VARCHAR(3) NOT NULL DEFAULT 'Non' AFTER `updownsell`;
+
+INSERT INTO `Column_of_Orders` (`id`, `name`, `active`, `id_user`, `createdAt`, `updatedAt`) 
+VALUES 
+  ('52', 'Changer', '1', '1', '2023-03-06 09:24:07.000000', '2023-03-06 09:24:07.000000'), 
+  ('53', 'Ouvrir', '1', '1', '2023-03-06 09:24:07.000000', '2023-03-06 09:24:07.000000')
+
+ALTER TABLE `Column_of_Orders` ADD `alias` VARCHAR(255) NULL DEFAULT NULL AFTER `name`;
+
+ALTER TABLE `Column_of_Orders` ADD `isExported` BOOLEAN NOT NULL DEFAULT FALSE AFTER `alias`;
+
+ALTER TABLE `Users` ADD `active` BOOLEAN NOT NULL DEFAULT FALSE AFTER `email`;
+ALTER TABLE `Sheets` ADD `range_` VARCHAR(255) NOT NULL DEFAULT 'Sheet1' AFTER `SheetID`;
+ALTER TABLE `Orders` ADD `SheetId` VARCHAR(255) NULL DEFAULT NULL ;
+UPDATE `Sheets` SET `SheetID` = '1YESIzWXlLmhgO-qTQ3mv0BOM3R9eDLAQxaDD4GHe3cM' WHERE `Sheets`.`id` = 1;
+
+ALTER TABLE `City_Users` ADD `isFromSheet` BOOLEAN NOT NULL DEFAULT FALSE AFTER `price`;
+ALTER TABLE `Orders` ADD `isDeleted` BOOLEAN NOT NULL DEFAULT FALSE AFTER `updownsell`;
+
+npx sequelize-cli model:generate --name Order_Audit --attributes id_order:integer,message:text
+
+sequelize db:migrate --name=20230320140654-create-order-audit.js
+
+-- To do
+
+npx sequelize-cli db:seed --seed 20221214145805-column-client-page.js
+npx sequelize-cli db:seed --seed 20221214145810-column-admin-page.js
+
+npx sequelize-cli model:generate --name Client_Response --attributes response:json,id_user:integer
+
+npx sequelize-cli model:generate --name Order_Comment --attributes message:string,id_order:integer
+npx sequelize db:migrate --name=20230822100859-create-message-support.js
+
+
+npx sequelize-cli model:generate --name MessageSupport --attributes message:string,id_support:integer

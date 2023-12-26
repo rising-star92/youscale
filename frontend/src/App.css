@@ -1,0 +1,17 @@
+:root {
+    --blue: #7720E1;
+}
+
+.card-tabs .nav-tabs {
+    width: max-content;
+    border-bottom: 4px solid #7720E180;
+}
+
+.card-tabs .nav-tabs .nav-link:after {
+    background: var(--blue) !important;
+}
+
+
+.card-tabs .nav-tabs .nav-link.active {
+    color: black;
+}

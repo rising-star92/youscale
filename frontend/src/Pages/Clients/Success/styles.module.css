@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#FFFFFF, #7720E1, #5A13C4);
+    height: 100vh;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+}
+
+.button{
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #7720E1;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.button p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.gif{
+    background-image: url(https://cdn.dribbble.com/users/129972/screenshots/3964116/media/4a4ce840785ad291a38009bdb2e326ac.gif);
+    height: 500px;
+    width: 500px;
+    background-position: center;
+}
+
+@media screen and (max-width: 1110px) {
+    .box{
+        width: 380px;
+    }
+
+    .gif{
+        height: 300px;
+        width: 300px;
+    }
+}

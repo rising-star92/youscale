@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;700&family=Poppins:ital,wght@0,500;1,200;1,300&display=swap");
+
+.tableWrapper {
+  border-radius: 20px;
+  background: #fff;
+  padding: 20px;
+}
+
+.headerTable {
+  gap: 4px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftTools {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.leftTools img {
+  width: 25px;
+  height: 25px;
+}
+
+.leftTools img:hover {
+  cursor: pointer;
+}
+
+.searchContainer {
+  display: flex;
+  width: 250px;
+  padding: 10px 60px 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+
+.searchInput {
+  width: 180px;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  background: #fff;
+}
+
+.middleTools {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rightTools {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.rightTools img {
+  width: 25px;
+  height: 25px;
+}
+
+.rightTools img:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 652px) {
+  .headerTable {
+    flex-wrap: wrap;
+  }
+  .middleTools {
+    width: 100%;
+    order: 3;
+    flex-wrap: wrap;
+  }
+  .leftTools {
+    width: 40%;
+  }
+  .rightTools {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .leftTools {
+    width: 45%;
+    justify-content: space-around;
+  }
+  .rightTools {
+    width: 45%;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .headerTable {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.table {
+  position: relative;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table th {
+  position: sticky;
+  background: rgba(17, 17, 17, 0.7);
+  color: #fff;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.table td {
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid rgba(17, 17, 17, 0.3);
+}
+
+.table th:first-child {
+  border-radius: 15px 0px 0px 0px;
+}
+
+.table th:last-child {
+  border-radius: 0px 15px 0px 0px;
+}
+
+.table th,
+td {
+  padding: 10px;
+  top: 0;
+}
+
+.tableContainer {
+  position: relative;
+  height: 450px;
+  overflow: scroll;
+}
+
+.tdWhatsapp {
+  display: flex;
+  height: 100%;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+.tableContainer::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+  background-color: #fafafa;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(17, 17, 17, 0.3);
+}
+
+.displayStatus {
+  display: flex;
+  align-items: center;
+  width: 1150px;
+  border: 1px solid rgba(17, 17, 17, 0.3);
+  background: #fafafa;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  width: 120px;
+  border-right: 1px solid rgba(17, 17, 17, 0.3);
+}
+
+.status:hover {
+  cursor: pointer;
+}
+
+.status p {
+  margin: 0;
+  color: rgba(17, 17, 17, 0.7);
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.statusControls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 38px;
+  width: 120px;
+  border: 1px solid rgba(17, 17, 17, 0.3);
+}
+
+.statusControls img {
+  width: 24px;
+  height: 24px;
+}
+
+.statusControls img:hover {
+  cursor: pointer;
+}
+
+.bottomTable {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+}
+
+.tdStatus {
+  display: flex;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.defaultRow p {
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  overflow-wrap: anywhere;
+}

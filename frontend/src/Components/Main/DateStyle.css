@@ -1,0 +1,12 @@
+.react-daterange-picker__wrapper {
+    background-color: white !important;
+    border: none !important;
+    height: 55px !important;
+    border-radius: 11px !important;
+    padding: 10px !important;
+}
+
+.react-calendar {
+    margin: 10px !important;
+    border-radius: 15px !important;
+}

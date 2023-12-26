@@ -1,0 +1,13 @@
+.column-access-row {
+    padding: 0;
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.custom-checkbox {
+    margin-bottom: 0px !important;
+}
+
+.lg-mse {
+    width: 200px;
+}

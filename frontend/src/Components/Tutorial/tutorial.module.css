@@ -1,0 +1,42 @@
+.BottomRightStaticBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    z-index: 9;
+    padding: 10px;
+}
+
+.header{
+   height: 30px;
+}
+
+.main{
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.dribbble.com/users/2500979/screenshots/6486096/dribbble_gif_login.gif);
+    background-position: center;
+}
+
+.header:hover{
+    cursor: pointer;
+}
+
+.welcomeTxt{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.playIcon:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}

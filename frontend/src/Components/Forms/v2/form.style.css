@@ -1,0 +1,16 @@
+.lg-input-cus {
+    width: 100% !important;
+}
+
+.cust-input-content{
+    display: flex;
+    align-items: center;
+}
+
+.eyes{
+    margin-left: 6px;
+}
+
+.eyes:hover{
+    cursor: pointer;
+}

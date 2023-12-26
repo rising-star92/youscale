@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;700&family=Poppins:ital,wght@0,500;1,200;1,300&display=swap');
+
+.filterContainer {
+    position: relative;
+}
+
+.supportFilterContainer {
+    position: relative;
+}
+
+.orderFilterContainer {
+    position: relative;
+}
+
+.filter {
+    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    background: #FFF;
+    width: max-content;
+    height: 50px;
+}
+
+.supportFilter {
+    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    background: #FFF;
+    width: max-content;
+    height: 50px;
+}
+
+.orderFilter {
+    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    background: #FFF;
+    width: max-content;
+    height: 50px;
+}
+
+.filter p {
+    color: rgba(0, 0, 0, 0.70);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.supportFilter p {
+    color: rgba(0, 0, 0, 0.70);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.orderFilter p {
+    color: rgba(0, 0, 0, 0.70);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.logo {
+    /* margin-right: 12px; */
+}
+
+.filterContainer:hover {
+    cursor: pointer;
+}
+
+.supportFilterContainer:hover {
+    cursor: pointer;
+}
+
+.orderFilterContainer:hover {
+    cursor: pointer;
+}
+
+.display {
+    position: absolute;
+    top: calc(100% + 10px); /* Adjust the distance from .filter */
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.09);
+    width: 218px;
+    max-height: 250px; /* Changed height to max-height */
+    padding: 13px;
+    overflow-y: auto; /* Changed overflow to auto for vertical scroll only */
+    overflow-x: hidden;
+    z-index: 99;
+}
+
+.display::-webkit-scrollbar {
+    width: 0.4em;
+    
+}
+
+.display::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+}
+
+.display::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 25px;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.checked {
+    background: rgba(119, 32, 225, 0.70);
+}
+
+.checked .itemLabel {
+    color: #FFF;
+}
+
+.itemLabel {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.itemCheckbox {
+    width: 24px;
+    height: 23px;
+    border-radius: 5px;
+    background: #FFF;
+    border: 1px gray solid;
+}
+
+.checked .itemCheckbox {
+    background-position: center;
+    background-image: url('/public/checked.svg');
+    margin: 1px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 920px){
+    .filter p {
+        display: none; 
+    } 
+}
+
+@media only screen and (max-width: 870px){
+    .supportFilter p {
+        display: none; 
+    } 
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 510px){
+    .orderFilter p {
+        display: none; 
+    } 
+}
+
+@media only screen and (max-width: 510px) {
+    .orderFilter {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .filter {
+        width: 270px;
+    }
+}

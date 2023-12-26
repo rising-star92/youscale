@@ -1,0 +1,31 @@
+.goal-progress-line{
+    width: 200px;
+}
+
+.goal-form{
+    display: flex;
+    margin-top: 20px;
+}
+
+.input-goal{
+    height: auto;
+    margin-right: 10px;
+}
+
+.table-paiement{
+    height: 370px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.table-header{
+    height: 100px;
+}
+
+.table-price{
+    font-size: 18px;
+}
+
+.table-delete-icon:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,114 @@
+.table-custum {
+    width: 170%;
+    min-height: 140px;
+}
+
+.tr-custum {
+    height: 65px;
+}
+
+.search-bar-custum {
+    width: 20rem;
+}
+
+.io-logo:hover {
+    cursor: pointer;
+}
+
+.check_all {
+    height: 22px;
+    width: 22px;
+}
+
+.case {
+    height: 22px;
+    width: 22px;
+}
+
+.container-msg:hover .tooltip-text-msg {
+    display: block;
+}
+
+.tooltip-order {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip-order:hover{
+    cursor: pointer;
+}
+
+.tooltip-order .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip-order:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tbl-order {
+    height: 500px;
+}
+
+.responsive-cus {
+    overflow: hidden;
+    height: auto !important;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+}
+
+table td {
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+table td:first-child {
+    border-left: none;
+}
+
+.del-order-hov:hover {
+    cursor: pointer;
+}
+
+.scrollbar-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.next-scroll-order:hover{
+    cursor: pointer;
+}
+
+.back-scroll-order:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .responsive-cus {
+        overflow: scroll !important;
+    }
+}
+
+.table-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

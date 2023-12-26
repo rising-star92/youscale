@@ -1,0 +1,53 @@
+.productContainer {
+    margin-top: 15px;
+    width: 407px;
+    height: 140px;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.30);
+    background: #FFF;
+    padding: 10px;
+}
+
+.title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.quantity span {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 30px;
+}
+
+.quantity input {
+    width: 138px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.30);
+    background: #FFF;
+    text-align: center;
+}
+
+.variant span {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 30px;
+}
+
+.variant{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}

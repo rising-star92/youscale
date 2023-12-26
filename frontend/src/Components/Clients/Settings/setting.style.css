@@ -1,0 +1,66 @@
+.api-img {
+    height: 50px;
+    width: 40px;
+}
+
+.api-col {
+    width: 100% !important;
+}
+
+.col-order:hover {
+    cursor: move;
+}
+
+.dragging {
+    opacity: 0.3;
+}
+
+.dd-list {
+    height: auto;
+    min-height: 300px;
+}
+
+.drag-and-drop-file {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    height: 113px;
+    border-radius: 15px;
+    border: 1px dashed #000;
+    background: #D9D9D9;
+}
+
+.drag-txt {
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14.892px;
+}
+
+.copy-model {
+    color: green;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.export-btn {
+    margin-top: 10px;
+}
+
+.status-lst {
+    display: flex;
+    align-items: center;
+}
+
+.color-cont {
+    margin-left: 10px;
+}
+
+.inactive-column div {
+    background: rgba(119, 32, 225, 0.30);
+}

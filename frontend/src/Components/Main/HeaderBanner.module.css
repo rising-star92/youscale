@@ -1,0 +1,39 @@
+/* HeaderBanner.module.css */
+.headerBanner {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background: rgba(119, 32, 225, 0.7);
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: center;
+    /* text-wrap: nowrap; */
+  }
+
+.announcement {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* flex: 1; */
+    text-align: center;
+}
+
+.leftArrow,
+.rightArrow,
+.closeButton {
+    color: #fff;
+    cursor: pointer;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.closeButton {
+    /* margin-left: auto; */
+}

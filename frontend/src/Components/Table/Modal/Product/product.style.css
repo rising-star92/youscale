@@ -1,0 +1,13 @@
+.add-variant-btn{
+    width: 99px;
+    height: 30px;
+}
+
+.variant-row{
+    justify-content: center;
+    align-items: center;
+}
+
+.add-btn{
+    margin: 20px;
+}

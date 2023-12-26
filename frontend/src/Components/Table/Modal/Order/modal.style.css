@@ -1,0 +1,31 @@
+.custum-time-line{
+    overflow-y: scroll !important;
+}
+
+.comment-input{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.order-id-date{
+    display: flex;
+    justify-content: space-around;
+}
+
+.restant-txt{
+    margin: 20px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.next-btn{
+    margin-left: 15px;
+}
+
+.call-ws-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}

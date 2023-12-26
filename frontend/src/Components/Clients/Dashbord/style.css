@@ -1,0 +1,83 @@
+.ads-card {
+    height: 50vh;
+}
+
+.ads-wh {
+    width: 100%;
+}
+
+.fs-18 {
+    font-size: 14px !important;
+}
+
+.tooltip-icon-card {
+    z-index: 99999;
+}
+
+.tooltip-icon-card:hover {
+    cursor: pointer;
+}
+
+.tooltip-card {
+    position: relative;
+    z-index: 88888;
+    height: 20px;
+}
+
+.tooltip-card .tooltiptext-card {
+    visibility: hidden;
+    z-index: 999999;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip-card:hover .tooltiptext-card {
+    visibility: visible;
+}
+
+.bg-pending-1 {
+    background: #F68407 !important;
+}
+
+.bg-delivered {
+    background: #43A047 !important;
+}
+
+.bg-pending-2 {
+    background: #b4936f !important;
+}
+
+.bg-cancelled {
+    background: #E53935 !important;
+}
+
+.bg-deleted {
+    background: #630200 !important;
+}
+
+.info-btn {
+    border: none;
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+}
+
+.display-video {
+    height: 200px;
+    width: 200px;
+}
+
+.driver-popover {
+    max-width: fit-content;
+}

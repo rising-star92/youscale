@@ -1,0 +1,35 @@
+.add-variant-btn{
+    width: 99px;
+    height: 30px;
+}
+
+.variant-row{
+    justify-content: center;
+    align-items: center;
+}
+
+.add-btn{
+    margin: 20px;
+}
+
+.chat-attachement{
+    height: 100px;
+    width: 100px;
+}
+
+.chat-attachement:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.admin-msg{
+    background-color: slateblue;
+}
+
+.admin-msg span{
+    color: white !important;
+}
+
+.admin-msg h6{
+    color: white !important;
+}

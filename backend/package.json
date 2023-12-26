@@ -1,0 +1,53 @@
+{
+  "name": "youscale.backend",
+  "version": "1.0.0",
+  "description": "Youscale backend- api",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oumardev/youscale.backend.git"
+  },
+  "author": "Oumardev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oumardev/youscale.backend/issues"
+  },
+  "homepage": "https://github.com/Oumardev/youscale.backend#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cli-progress": "^3.12.0",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "date-format": "^4.0.14",
+    "dateformat": "^5.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.2",
+    "googleapis": "^110.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "node-cron": "^3.0.2",
+    "nodemon": "^2.0.20",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "performance-now": "^2.1.0",
+    "sequelize": "^6.27.0",
+    "socket.io": "^4.7.2",
+    "twilio": "^4.8.0",
+    "uuid": "^9.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.0"
+  }
+}

@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;700&family=Poppins:ital,wght@1,200&display=swap');
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#FFFFFF, #7720E1, #5A13C4);
+    height: 100vh;
+}
+
+.logout {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 147px;
+    height: 47px;
+    border-radius: 6px;
+    padding: 8px 16px 8px 16px;
+    gap: 10px;
+    background-color: #EF4444;
+    margin: 15px;
+}
+
+.logout p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1180px;
+    height: auto;
+    border-radius: 20px;
+    padding: 60px 50px 60px 50px;
+    background-color: #FFFFFF;
+}
+
+.progressbarWrapper {
+    width: 1080px;
+    border-radius: 10px;
+    background-color: #7720E14D;
+    margin-bottom: 80px;
+}
+
+.progressbar {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #7720E1;
+    transition-timing-function: ease-out;
+    transition: 0.25s;
+}
+
+
+.title {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 27.89px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.questionContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 380px;
+    border-radius: 20px;
+    border: 3px solid #0000004D;
+    padding: 20px;
+    margin: 10px;
+}
+
+.question:hover {
+    cursor: pointer;
+    border: 3px solid #7720E1;
+}
+
+.question div {
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.button {
+    border: none;
+    width: 230px;
+    height: 58px;
+    border-radius: 9px;
+    padding: 13px 25px 13px 25px;
+    gap: 15.7px;
+    background-color: #7720E1;
+    margin-top: 40px;
+}
+
+.button p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.active {
+    border: 3px solid #7720E1 !important;
+}
+
+.active p {
+    color: #000000;
+}
+
+.questionSmall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 180px;
+    border-radius: 20px;
+    border: 3px solid #0000004D;
+    padding: 20px;
+    margin: 10px;
+}
+
+.questionSmall:hover {
+    cursor: pointer;
+    border: 3px solid #7720E1;
+}
+
+.questionSmall div {
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+@media screen and (max-width: 1240px) {
+    .card {
+        width: 1000px;
+    }
+
+    .progressbarWrapper {
+        width: 800px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 500px;
+    }
+
+    .progressbarWrapper {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .card {
+        width: 360px;
+        height: 600px;
+        padding: 60px 20px 60px 20px;
+    }
+
+    .progressbarWrapper {
+        width: 100px;
+    }
+
+    .button {
+        margin-top: 5px;
+    }
+
+    .progressbarWrapper {
+        margin-bottom: 30px;
+    }
+
+    .question {
+        height: 100px;
+        width: 190px;
+    }
+
+    .question p{
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .questionSmall {
+        height: 100px;
+        width: 130px;
+    }
+
+    .questionSmall p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .button {
+        width: 200px;
+        height: 40px;
+        margin-top: 20px;
+    }
+    
+    .button p {
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+}

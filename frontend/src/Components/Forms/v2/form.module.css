@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: red;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.label {
+  width: 50%;
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input {
+  margin-right: 10px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid rgba(17, 17, 17, 0.3);
+  background: #fff;
+  outline: none;
+  padding-left: 15px;
+}
+
+.formSelect {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+  margin-top: 10px;
+}
+
+.select {
+  margin-right: 10px;
+  width: 50%;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid rgba(17, 17, 17, 0.3);
+  background: #fff;
+  padding-left: 15px;
+}
+
+.city_dropdown {
+  margin-right: 10px;
+  width: 50% !important;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid rgba(17, 17, 17, 0.3);
+  background: #fff;
+  padding-left: 15px;
+}
+
+.form textarea {
+  width: 50%;
+  margin-left: 10px;
+  height: auto;
+}

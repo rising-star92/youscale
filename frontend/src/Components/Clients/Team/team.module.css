@@ -1,0 +1,96 @@
+.teamTitle {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.addMemberBtn {
+    display: inline-flex;
+    padding: 7.415px 14.829px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5.561px;
+    background: var(--Purple, #7720E1);
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12.976px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22.244px;
+}
+
+.addMemberBtn img {
+    width: 18px;
+    margin-right: 8px;
+}
+
+.table {
+    position: relative;
+    border-collapse: collapse;
+    width: 595px;
+    height: 41px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background: #FFF;
+}
+
+.table th {
+    position: sticky;
+    background: rgba(17, 17, 17, 0.70);
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 15px;
+    /* 150% */
+}
+
+.table th:first-child {
+    border-radius: 15px 0px 0px 0px;
+}
+
+.table th:last-child {
+    border-radius: 0px 15px 0px 0px;
+}
+
+.table td {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.table tbody {
+    border: 1px solid var(--Gray1, rgba(17, 17, 17, 0.30));
+}
+
+.editIcon {
+    margin-left: 10px;
+}
+
+.actionIcons {
+    margin-left: 2px;
+}
+
+.totalRow {
+    border-radius: 15px 15px 0px 0px;
+    background: rgba(119, 32, 225, 0.70);
+}
+
+.totalRow td{
+    color: white !important;
+}
+
+@media only screen and (max-width:600px) {
+    .addMemberBtn {
+        width: 100%;
+    }
+}

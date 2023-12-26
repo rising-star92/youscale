@@ -1,0 +1,139 @@
+.annoucement-txt {
+  width: 30%;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.nav-item {
+  align-self: center;
+}
+
+.navigation-menu {
+  margin-left: auto;
+}
+
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.hamburger2 {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+.hamburger2:hover {
+  background-color: #f6f6f6;
+}
+
+@media screen and (max-width: 920px) {
+  .hamburger2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .expanded ul {
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .navigation-menu ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .navigation-menu ul {
+    gap: 4px;
+    padding-right: 4px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    flex-direction: column !important;
+    width: max-content;
+    height: fit-content;
+    background-color: #f6f6f6;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    border-top: none;
+    border-right: none;
+  }
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+  }
+  .navigation-menu #nav5 {
+    gap: 60px;
+  }
+  .navigation-menu li a {
+    margin-left: 12px;
+    color: black;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .navigation-menu li:hover {
+    background-color: #eee;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .brand-title2.hidden {
+    display: none;
+  }
+  .brand-title1.hidden {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .brand-title2.hidden {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .brand-title1 {
+    display: none !important;
+  }
+}
+
+.brand-title1 {
+  display: block;
+}
+
+.brand-title2 {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .brand-title2.hidden {
+    display: block;
+  }
+
+  .brand-title1 {
+    display: none;
+  }
+}

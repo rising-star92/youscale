@@ -1,0 +1,207 @@
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.imageSection {
+    height: 100vh;
+}
+
+.image {
+    height: 100vh;
+}
+
+.loginSection {
+    background-image: url('/public/cus_img/solar-top-left.png'), url('/public/cus_img/solar-bottom-right.png');
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.swither {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 250px;
+    height: 42px;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: #F1F5F9;
+}
+
+.option {
+    width: auto;
+    height: 32px;
+    border-radius: 3px;
+    padding: 6px 12px 6px 12px;
+}
+
+.active {
+    background-color: #FFFFFF;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 192px;
+    border: 1px solid #E2E8F0;
+    padding: 25px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.mainDesc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #64748B;
+}
+
+.googleBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 272px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 8px, 16px, 8px, 16px;
+    background-color: #1E1E1E;
+}
+
+.googleBtn div {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+
+.googleBtn:hover {
+    cursor: pointer;
+}
+
+.GIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: black;
+    margin-top: 20px;
+}
+
+.mainTeam {
+    width: 400px;
+    height: 295px;
+    border: 1px solid #E2E8F0;
+    padding: 25px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px;
+}
+
+.label {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #0F172A;
+    margin: 0;
+}
+
+.input {
+    width: 350px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #CBD5E1;
+    padding: 8px 56px 8px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.input:hover {
+    outline: none;
+}
+
+.button {
+    border: none;
+    margin: 15px;
+    width: 126px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 8px 16px 8px 16px;
+    background-color: #1E1E1E;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1110px) {
+    .imageSection {
+        display: none;
+
+    }
+
+    .loginSection{
+        background-size: 198px 129px;
+    }
+
+    .main {
+        width: 340px;
+    }
+
+    .mainTeam {
+        width: 340px;
+    }
+
+    .input {
+        width: 300px;
+    }
+
+}
